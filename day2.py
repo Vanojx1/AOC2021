@@ -15,7 +15,7 @@ for m in puzzle_input:
         sub += Point(0, int(off))
     else: raise Exception('BAD MOVE!')
 
-print('Part 1:', int(sub.real * sub.imag))
+print('Part 1:', sub.x * sub.y)
 
 sub = Point(0, 0)
 aim = 0
@@ -30,4 +30,4 @@ for m in puzzle_input:
         aim += int(off)
     else: raise Exception('BAD MOVE!')
 
-print('Part 2:', int(sub.real * sub.imag))
+print('Part 2:', sub.x * sub.y)
